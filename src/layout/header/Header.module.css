@@ -1,0 +1,14 @@
+.header {
+  grid-area: h;
+  background-color: rgb(120, 166, 250);
+}
+
+header {
+  display: flex;
+  gap: 20px;
+}
+
+header img {
+  width: 50px;
+  object-fit: cover;
+}

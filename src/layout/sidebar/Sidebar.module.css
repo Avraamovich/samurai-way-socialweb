@@ -1,0 +1,17 @@
+.sidebar {
+  grid-area: s;
+  background-color: rgb(120, 166, 250);
+}
+
+ul {
+  list-style: none;
+}
+
+.item a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.item a.activeLink {
+  color: #ff0000;
+}
