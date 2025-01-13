@@ -38,7 +38,7 @@ export function Dialogs() {
       </div>
     </div>
   );
-};
+}
 
 function DialogItem  (props: MessageType) {
   return (
