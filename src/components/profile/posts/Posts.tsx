@@ -8,7 +8,7 @@ export function Posts() {
   );
 };
 
-const Post = () => {
+function Post (){
   return (
     <div>
       Post 1

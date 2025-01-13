@@ -12,29 +12,29 @@ type ConversationType = {
 
 export function Dialogs() {
 
-    let dataDialogs = [
+    let dialogsData = [
         {name: 'Tamila', id: '1'},
         {name: 'Adelina', id: '2'},
         {name: 'Andrew', id: '3'},
     ];
 
-    let dataMessages = [
+    let dialogsData1 = dialogsData.map( (d) => <DialogItem name={d.name} id={d.id} /> )
+
+    let messagesData = [
         {id: '1', message: 'Hi!'},
         {id: '2', message: 'How are you?'},
         {id: '3', message: 'Bye!'},
     ]
 
+    let messagesData2 = messagesData.map( m => <Conversation message={m.message} /> )
+
   return (
     <div className={s.dialogsWrap}>
       <div className={s.dialogs}>
-        <DialogItem name={dataDialogs[0].name} id={dataDialogs[0].id} />
-        <DialogItem name={dataDialogs[1].name} id={dataDialogs[1].id} />
-        <DialogItem name={dataDialogs[2].name} id={dataDialogs[2].id} />
+          {dialogsData1}
       </div>
       <div className={s.messages}>
-        <Conversation message={dataMessages[0].message} />
-        <Conversation message={dataMessages[1].message} />
-        <Conversation message={dataMessages[2].message} />
+          {messagesData2}
       </div>
     </div>
   );
