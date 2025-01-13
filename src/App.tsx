@@ -3,7 +3,7 @@ import { Header } from './layout/header/Header';
 import { Sidebar } from './layout/sidebar/Sidebar';
 import { Content } from './layout/content/Content';
 import { Footer } from './layout/footer/Footer';
-import { Messages } from './components/messages/Messages';
+import { Dialogs } from './components/messages/Dialogs';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { News } from './components/news/News';
 import { Music } from './components/music/Music';
@@ -19,7 +19,7 @@ function App() {
         <Sidebar />
         <div className='app-wrapper-content'>
           <Route path='/home' component={Content} />
-          <Route path='/message' component={Messages} />
+          <Route path='/message' component={Dialogs} />
           <Route path='/news' component={News} />
           <Route path='/music' component={Music} />
           <Route path='/settings' component={Settings} />

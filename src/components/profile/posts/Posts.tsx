@@ -11,7 +11,7 @@ export function Posts() {
 const Post = () => {
   return (
     <div>
-      post 1
+      Post 1
     </div>
   )
 }
