@@ -40,7 +40,7 @@ export function Dialogs() {
   );
 };
 
-const DialogItem = (props: MessageType) => {
+function DialogItem  (props: MessageType) {
   return (
     <div className={s.dialog}>
       <NavLink to={'/message/1' + props.id}>{props.name}</NavLink>
@@ -48,6 +48,6 @@ const DialogItem = (props: MessageType) => {
   )
 }
 
-const Conversation = (props: ConversationType) => {
+function Conversation  (props: ConversationType){
     return <p>{props.message}</p>
 }
