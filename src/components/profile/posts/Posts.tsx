@@ -1,3 +1,4 @@
+import {Post} from "./post/Post";
 
 export function Posts() {
   return (
@@ -8,10 +9,3 @@ export function Posts() {
   );
 };
 
-function Post (){
-  return (
-    <div>
-      Post 1
-    </div>
-  )
-}
